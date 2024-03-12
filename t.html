@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      display: flex;
+      max-width: 600px;
+      margin: 20px;
+      border: 1px solid #ddd;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .text-container {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .image-container {
+      flex: 1;
+      overflow: hidden;
+      
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="text-container">
+      <h2>Your Text Content Goes Here</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac urna eu sem bibendum bibendum sit amet vitae tellus.</p>
+    </div>
+    <div class="image-container">
+      <img src="first_image.jpg" alt="Your Image">
+    </div>
+  </div>
+
+</body>
+</html>

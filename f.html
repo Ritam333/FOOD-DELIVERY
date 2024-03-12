@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image: linear-gradient( 360deg , rgba(241, 241, 163, 0.912), white);
+    }
+
+    .flex-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .flex-item {
+      flex: 1;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      height: 300px; /* Set a specific height for the flex-item */
+    }
+
+    .flex-item img {
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover; /* Maintain aspect ratio and cover the container */
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <title>Flexbox Example</title>
+</head>
+<body>
+
+  <div class="flex-container">
+    <div class="flex-item">
+      <img src="a.jpg" alt="Image 1">
+      <h3>Image 1</h3>
+      <p>Description for Image 1.</p>
+    </div>
+
+    <div class="flex-item">
+      <img src="g.jpg" alt="Image 2">
+      <h3>Image 2</h3>
+      <p>Description for Image 2.</p>
+    </div>
+
+    <!-- Add more flex-items as needed -->
+
+  </div>
+
+</body>
+</html>
+
+

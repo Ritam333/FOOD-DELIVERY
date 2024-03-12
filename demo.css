@@ -1,0 +1,107 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 5vw);
+    grid-gap: 1.5rem; 
+  }
+  
+  
+  .gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    position: relative;
+    
+  
+    /** Alternative Syntax **/
+    /* grid-column: 1 / span 2;  */
+    /* grid-row: 1 / span 2; */
+  }
+  
+  .gallery__item--2 {
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    position: relative;
+
+  
+    /** Alternative Syntax **/
+    /* grid-column: 3 / span 2;  */
+    /* grid-row: 1 / span 2; */
+  }
+  
+  .gallery__item--3 {
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    position: relative;
+    /** Alternative Syntax **/
+    /* grid-column: 5 / span 4;
+    grid-row: 1 / span 5; */
+  }
+  .gallery__item--2 .gallery__img{
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+    margin-left: 17px;
+
+  }
+  .gallery__item--1 .gallery__img{
+    width: 107%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+
+  }
+  .gallery__item--3 .gallery__img{
+    width: 109%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+    margin-left: -40px;
+
+  }
+ 
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #efbdde;
+    opacity: 0.5;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  .gallery__item--1:hover .overlay {
+    width: 107%;
+    height: 100%;
+  }
+  .gallery__item--2:hover .overlay {
+    width: 90%;
+    height: 100%;
+   
+  }
+  .gallery__item--3:hover .overlay {
+    width: 109%;
+    height: 100%;
+  }
+  .tex {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }  
+ 
+  
+  
